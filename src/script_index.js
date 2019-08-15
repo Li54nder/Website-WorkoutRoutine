@@ -97,6 +97,9 @@ document.addEventListener('DOMContentLoaded', start);
 function loaded() {
     let loading = document.querySelector('.loading');
     loading.setAttribute("style", "opacity: 0;");
+    setTimeout(() => {
+        loading.setAttribute("style", "display: none;");
+    }, 1000);
     let logo = document.querySelector('nav img');
     logo.setAttribute("style", "transform: rotate(" + 360 + "deg)");
     let text = document.querySelectorAll('nav span');
