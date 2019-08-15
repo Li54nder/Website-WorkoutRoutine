@@ -1,0 +1,11 @@
+# day: 1 | For Moday ~full body~ 
+# day: 2 | For Tuesday ~back~ 
+# day: 3 | For Wednesday ~upper body~ 
+# day: 4 | For Thursday ~abs~ 
+# day: 5 | For Friday ~triceps~ 
+# day: 6 | For Saturday ~full body~ 
+# day: 7 | For Sunday ~leg day~  
+$ msg: Hi {'name'}, \nYour daily routine notification for today is shown on pycture below. \nAttention: 3 min rest between each cycle and minimum rest between exercises.
+$ msg: {'src of picture ("~~~~_" + day)'}
+$ msg: Recommend us to your friends. \nHappy workout! 
+*** emails: ***

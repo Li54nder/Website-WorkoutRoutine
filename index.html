@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/styles_index.css">
+    <script src="src/script_index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navigation">
+        <span>Workout</span>
+        <img src="media/logo.png" alt="logo | street workout | routine">
+        <span>Routine</span>
+    </nav>
+
+    <div class="first_view">
+        <div class="loading"></div>
+        <div class="container">
+            <div class="item item1">
+                <p>For Monday</p>
+                <p>~full body~</p>
+            </div>
+            <div class="item item2">
+                <p>For Tuesday</p>
+                <p>~back~</p>
+            </div>
+            <div class="item item3">
+                <p>For Wednesday</p>
+                <p>~upper body~</p>
+            </div>
+            <div class="item item4">
+                <p>For Thursday</p>
+                <p>~abs~</p>
+            </div>
+            <div class="item item5">
+                <p>For Friday</p>
+                <p>~triceps~</p>
+            </div>
+            <div class="item item6">
+                <p>For Saturday</p>
+                <p>~full body~</p>
+            </div>
+            <div class="item item7">
+                <p>For Sunday</p>
+                <p>~leg day~</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <span>~ Daily Routine ~</span>
+        <img src="media/routine/routine_4_2.jpg" alt="routine" onmouseover="showGuide()" onmouseout="hideGuide()">
+        <span>Get your daily routine notification for every day by subscribing on form below.</span>
+    </div>
+
+    <div class="subscribe">
+        <form class="flex-form" onsubmit="return false">
+
+            <input id="name" type="text" placeholder="Your Name" size="10">
+            <input id="email" type="email" placeholder="Your Mail" size="25" autocomplete="on" required>
+            <label for="form">Level:</label>
+            <select name="" id="select">
+                <option value="1">Beginner</option>
+                <option value="2">Medium</option>
+                <option value="3">Advanced</option>
+            </select>
+            <button class="submit"> <!-- onclick="subscribe()" -->
+                <div class="state1">Subscribe</div>
+                <div class="state2 active">Sending...</div>
+                <div class="state3 active">Done!</div>
+            </button>
+            <!-- <input type="submit" value="Subscribe" onclick="subscribe()"/> -->
+
+        </form>
+    </div>
+
+</body>
+</html>
