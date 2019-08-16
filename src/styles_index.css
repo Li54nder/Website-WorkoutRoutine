@@ -242,6 +242,9 @@ html, body {
     .container .item.open-active > * {
         opacity: 1;
     }
+    .container .item.open {
+        flex: 5 1 60%;
+    }
     .content img {
         width: 95%;
     }
